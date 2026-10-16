@@ -1,6 +1,9 @@
 .header .container{
     padding: 28px 0;
 }
+.OIP{
+    display: none;
+}
 .list ul{
     display: flex;
     gap: 80px;
@@ -283,7 +286,6 @@
     align-items: center;
     gap: 5px;   
 }
-
 .Recommend h3{
     font-size: 24px;
     font-weight: 500;
@@ -431,198 +433,329 @@
 
 
 
-@media screen and (min-width: 520px) and (max-width: 700px) {
-
+@media (max-width: 600px) {
     .header .container{
-        width: calc( 100% - 24px );
+        width: calc( 100% - 20px );
         padding: 20px;
     }
     .icons{
         display: none;
     }
-    .list ul{
-        display: flex;
-        gap: 5px;
+    .list{
+        display: none;
     }
-    .list li{
-        border: 1px solid #5B5B5B;
-        padding: 1px 5px;
+    .OIP{
+        display: block;
     }
-
+    .OIP img{
+        width: 40px;
+        height: 40px;
+    }
 
     .lessons .container{
-        width: calc( 100% - 30px );
+        width: calc( 100% - 20px );
         padding: 20px;
+    }
+    .title{
+        margin-bottom: 20px;
+    }
+    .title h2{
+        font-size: 30px;
+        font-weight: 100;
+        color: #252641;
     }
     .title p{
         display: none;
     }
     .lessons .lesson{
-        padding: 10px;
-        width: calc( ( 100% - 10px ) / 3);
-    }
-    .title h2{
-        font-size: 24px;
-        font-weight: 300;
-    }
-    .ico h2{
-        display: none;
-    }
-    .ico img{
-        display: none;
+        width: 100%;
+        margin-bottom: 10px;
     }
     .lesson h2{
-        font-size: 10px;
-        font-weight: 200; 
+        font-size: 15px;
+        
     }
-    .title{
-        margin-bottom: 20px;
+    .ico img {
+        width: 30px;
+        height: 30px;
+    }
+    .ico h2{
+        font-size: 15px;
     }
     .lesson h3{
-        font-size: 7px;
-        font-weight: 300;
-        margin-top: 5px;
-    }
-    .ico{
-        margin-bottom: 2px;   
+        display: none;
     }
 
     .collections .container{
         width: calc( 100% - 10px );
         padding: 20px;
     }
-    .collection p{
-        display: none;
+    .collections .collection{
+        width: 100%;
+        margin-top: 25px;
     }
     .collections .container h2{
-        font-size: 24px;
-        font-weight: 300;
+        font-size: 30px;
+        font-weight: 100;
+        color: #252641;
+    } 
+
+    .Recommends .container{
+        width: calc( 100% - 10px );
+        padding: 20px;
     }
-    .collection h3{
-        font-size: 15px;
-        font-weight: 200;
+    .Recommends .Recommend{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .title2{
+        margin-bottom: 20px;
+    }
+
+    .courses .container{
+        width: calc( 100% - 10px );
+        padding: 20px;
+    }
+    .courses .Recommend{
+        width: 100%;
+        margin-top: 25px;
+    }
+    .courses .title2{
+        margin-top: 30px;
+    }   
+    .courses .rec-icons{
+        gap: 200px;
+    }
+    .Recommend .rec-icons{
+        gap: 200px;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+    .header .container{
+        width: calc( 100% - 30px );
+        padding: 20px;
+    }
+    .icons{
+        display: none;
+    }
+    .list{
+        display: none;
+    }
+    .OIP{
+        display: block;
+    }
+    .OIP img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .lessons .container{
+        width: calc( 100% - 30px );
+        padding: 20px;
+    }
+    .title{
+        margin-bottom: 30px;
+    }
+    .title h2{
+        font-size: 35px;
+        font-weight: 100;
+    }
+    .title p{
+        display: none;
+    }
+    .lessons .lesson{
+        width: 50%;  
+        margin: 10px auto;
+    }
+    .lesson h2{
+        font-size: 20px;     
+    }
+    .ico img {
+        width: 30px;
+        height: 30px;
+    }
+    .ico h2{
+        font-size: 20px;
+    }
+    .lesson h3{
+        display: none;
+    }
+
+    .collections .container{
+        width: calc( 100% - 30px );
+        padding: 20px;
     }
     .collections .collection{
-        width: calc( ( 100% - 10px ) / 4);
+        width: 50%;
         margin-top: 25px;
-        margin-bottom: 25px;
-        border: 1px solid #5B5B5B;
-        background-color: #ffffff;
     }
-    .icons1{
-        margin: 10px auto;
-        width: 80px;
-        height: 70px;
-    }
-    .icons2{
-        margin: 10px auto;
-        width: 80px;
-        height: 70px;
-    }
-    .icons3{
-        margin: 10px auto;
-        width: 80px;
-        height: 70px;
-    }
-    .icons4{
-        margin: 10px auto;
-        width: 80px;
-        height: 70px;
-    }
-    .icons5{
-        margin: 10px auto;
-        width: 80px;
-        height: 70px;
-    }
-    .icons6{
-        margin: 10px auto;
-        width: 80px;
-        height: 70px;
-    }
-    .icons7{
-        margin: 10px auto;
-        width: 80px;
-        height: 70px;
-    }
+    .collections .container h2{
+        font-size: 35px;
+        font-weight: 100;
+        color: #252641;
+    } 
 
     .Recommends .container{
         width: calc( 100% - 30px );
         padding: 20px;
     }
-    .Recommend p{
-        display: none;
-    }
-    .icons{
-        display: none;
-    }
     .Recommends .Recommend{
-        width: calc( ( 100% - 10px ) / 2 );
-        padding: 10px;
-        
+        width: 50%;
+        margin-top: 25px;
     }
-    .Recommends .title2 h2{
-        font-size: 24px;  
-    }
-    .rec-icons{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        gap: 120px;
+    .title2{
+        margin-bottom: 20px;
     }
     .Recommend h3{
         font-size: 20px;
     }
+    .Recommend p {
+        font-size: 15px;
+    }
 
     .courses .container{
         width: calc( 100% - 30px );
-        /* padding: 20px; */
-    }
-    .courses .title2{
-        margin: 25px auto;
-    }
-    .courses .title2 h2{
-        font-size: 25px;
+        padding: 20px;
     }
     .courses .Recommend{
-        width: calc( ( 100% - 5px ) / 4 );
+        width: 50%;
+        margin-top: 25px;
     }
-    .courses .Recommend h3{
-        font-size: 17px;
-        margin-left: 20px;
+    .courses .title2{
+        margin-top: 30px;
     }
     .courses .rec-icons{
-        display: none;
+        gap: 100px;
     }
-    .courses .h{
-        margin-top: 5px;
-        margin-left: 20px;
+    .Recommend .rec-icons{
+        gap: 100px;
     }
 
-    .footer{
-        padding: 30px 15px;   
+}
+
+@media (min-width: 900px) and (max-width: 1030px) {
+    .header .container{
+        width: calc( 100% - 35px );
+        padding: 20px;
     }
-    .footer-1{
-        gap: 15px;
-        margin-bottom: 40px;      
+    .OIP{
+        display: none;
     }
-    .footer h2{
-        font-size: 18px;   
+    .list {
+        display: flex;
+        gap: 80px;
     }
-    .input{
-        gap: 15px;
-        margin-bottom: 40px;      
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 12px;
     }
-    .input input{
-        width: 280px;        
-        height: 50px;
+
+    .lessons .container{
+        width: calc( 100% - 35px );
+        padding: 20px;
     }
-    .input button{
-        margin-left: 0;     
+    .title{
+        margin-bottom: 35px;
     }
-    .footer .p{
-        gap: 10px;
+    .title h2{
+        font-size: 35px;
+        font-weight: 100;
     }
-    .footer h4{
-        font-size: 16px;  
+    .title p{
+        display: none;
     }
+    .lessons .lesson{
+        width: calc( ( 100% - 20px ) / 3 ) ;
+    }
+    .lesson h2{
+        font-size: 25px;     
+    }
+    .ico img {
+        width: 40px;
+        height: 40px;
+    }
+    .ico h2{
+        font-size: 20px;
+    }
+    .lesson h3{
+        display: none;
+    }
+    
+    .collections .container{
+        width: calc( 100% - 35px );
+        padding: 20px;
+    }
+    .collections .collection{
+        width: calc( ( 100% - 20px ) / 4 ) ;
+        margin-top: 30px;
+    }
+    .collections .container h2{
+        font-size: 35px;
+        font-weight: 100;
+        color: #252641;
+        margin-top: 10px;
+    } 
+    .collection h3{
+        font-size: 25px;
+    }
+    .collection p{
+        font-size: 15px;
+    }
+
+    .Recommends .container{
+        width: calc( 100% - 35px );
+        padding: 20px;
+    }
+    .Recommends .Recommend{
+        width: calc( ( 100% - 20px ) / 4 );
+        margin-top: 30px;
+    }
+    .title2{
+        margin-bottom: 20px;
+    }
+    .Recommend h3{
+        font-size: 18px;
+    }
+    .Recommend p {
+        font-size: 12px;
+    }
+    .h h5{
+        font-size: 15px;
+    }
+    .h h6 {
+        font-size: 15px;
+    }
+    .rec-icon h2{
+        font-size: 12px;
+    }
+    .rec-icon1 h2{
+        font-size: 12px;
+    }
+    .icons img{
+        width: 30px;
+        height: 30px;
+    }
+    .courses .container{
+        width: calc( 100% - 35px );
+        padding: 20px;
+    }
+    .courses .Recommend{
+        width: ( ( 100% - 20px ) / 4 );
+        margin-top: 30px;
+    }
+    .courses .title2{
+        margin-top: 30px;
+    }
+    .courses .rec-ico{
+        gap: 30px;
+    }
+    .courses .rec-icons{
+        gap: 30px;
+    }
+    
+    
 
 }
